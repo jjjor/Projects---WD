@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form method="POST" action="https://www2.ifrn.edu.br/sirab/send.php">
+
+<label>Nome </br>
+    <input type="text" name="nome_pessoa" placeholder="Digite seu nome:" autofocus>
+</label> </br>
+
+
+<label>E-mail </br>
+    <input type="email" name="email" placeholder="___@gmail.com">
+</label> </br>
+
+
+<label>Senha </br>
+    <input type="password" name="senha">
+</label> </br>
+
+
+<label>Data de nascimento </br>
+    <input type="text" name="data_nascimento" placeholder="__/__/____" maxlength="10">
+    <input type="reset" value="Reset"></br>
+</label> </br>
+
+<label>Linguagem que usa</label>
+    <label><input type="checkbox" name="php" value="1">PHP</label>
+    <label><input type="checkbox" name="js" value="1">JS</label><br/>
+
+
+<br><button>Enviar</button><br/>
+
+
+<br><button type="button" onclick="alert('mano')">Button</button></br><br/>
+
+<label for="datemax">Data máxima 2000-01-01:</label>
+<input type="date" id="datemax" name="datemax" 
+max="2000-01-01" value="1999-01-01" /><br/>
+
+
+<label for="qtd">Quantidade (Entre 1 e 5):</label>
+<input type="number" id="qtd" name="qtd" min="0" max="50" step="5" /><br/>
+
+
+<label for="arquivos">Uploads:</label>
+<input type="file" id="arquivos" name="arquivos" multiple /><br/>
+
+
+<br/><select name="browser">
+    <option value="0">Internet Explorer</option>
+    <option value="1">Firefox</option>
+    <option value="2">Chrome</option>
+    <option value="3">Opera</option>
+    <option value="4">Safari</option>
+</select>
+
+
+<br/><br/><input name="browser" list="browsers" />
+<datalist id="browsers">
+    <option value="Internet Explorer" />
+    <option value="Firefox" />
+    <option value="Chrome" />
+    <option value="Opera" />
+    <option value="Safari" />
+</datalist>
+
+
+<br/><br/><label for="obs">Observações</label>
+<textarea id="obs" name="observacoes"></textarea>
+
+
+</form>
+    
+</body>
+</html>
