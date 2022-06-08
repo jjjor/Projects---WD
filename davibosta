@@ -1,0 +1,104 @@
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+</head>
+<body>
+<form method="POST" action="https://www2.ifrn.edu.br/sirab/send.php">
+
+<h1 style="text-align: center;">Formulário Web Design</h1>
+
+<label>Nome </br>
+    <input type="text" name="nome_pessoa" placeholder="Digite seu nome:" autofocus>
+</label> </br>
+
+
+<label>CPF </br>
+    <input name="cpf" placeholder="000.000.000-00" maxlength="16" size="12" />
+</label> </br>
+
+
+<label>Data de nascimento </br>
+    <input type="date" name="datadenascimento" placeholder="__/__/____" maxlength="10">
+</label> </br>
+
+
+<label>E-mail </br>
+    <input type="email" name="email" placeholder="___@gmail.com">
+</label> </br>
+
+
+<label>Senha </br>
+    <input type="password" name="senha">
+</label> 
+
+
+<br><label>Sexo:</label>
+    <label><input type="radio" name="sexo" value="M">Masculino</label>
+    <label><input type="radio" name="sexo" value="F">Feminino</label>
+    <label><input type="radio" name="sexo" value="N">Não deseja informar</label>
+<br>
+<label>UF de nascimento</label>
+<br><input name="uf" list="estados"/>
+<datalist id="estados">
+    <option value="AL" />
+    <option value="AC" />
+    <option value="AP" />
+    <option value="BA" />
+    <option value="CE" />
+    <option value="DF" />
+    <option value="MS" />
+    <option value="MG" />
+    <option value="PE" />
+    <option value="RJ" />
+    <option value="MG" />
+    <option value="SC" />
+
+</datalist>
+
+<br>
+<label>Linguagem de programação preferida: </label>
+<br>
+<label><input type="checkbox" name="Linguagem1" value="1">JS</label><br/>
+<label><input type="checkbox" name="Linguagem2" value="2">PHP</label><br/>
+<label><input type="checkbox" name="Linguagem3" value="3">Python</label><br/>
+<label><input type="checkbox" name="Linguagem4" value="4">Java</label><br/>
+<label><input type="checkbox" name="Linguagem5" value="5">HTML</label><br/>
+<label><input type="checkbox" name="Linguagem6" value="6">C#</label><br/>
+<label><input type="checkbox" name="Linguagem7" value="7">Ruby</label><br/>
+<label><input type="checkbox" name="Linguagem8" value="8">Lua</label><br/>
+<label><input type="checkbox" name="Linguagem9" value="9">Go</label><br/>
+<label><input type="checkbox" name="Linguagem10" value="10">C</label><br/>
+
+
+<br><label for="obs">Observações: </label>
+<br>
+<textarea width='200px' id="obs" name="observacoes"></textarea>
+
+
+<br><br>
+<button>Enviar</button> <input type="reset" value="Reset"></br>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
